@@ -108,15 +108,16 @@ const Quiz = () => {
       </div>
 
       {loading && (
-        <div className="loading flex justify-center mt-4">
+        <div className="loading flex justify-center items-center h-[100vh] w-[100vw] bg-red-100 fixed top-0 left-0 z-50">
           <div className="spinner"></div>
         </div>
       )}
+
       {submitted && (
-        <div className="success flex justify-center mt-4">
+        <div className="success flex flex-col justify-center items-center h-[100vh] w-[100vw] bg-lime-600 fixed top-0 left-0 z-50">
           <div className="checkmark">&#10004;</div>
           <br />
-          Successfully Submitted!
+          <span>Successfully Submitted!</span>
         </div>
       )}
     </div>
